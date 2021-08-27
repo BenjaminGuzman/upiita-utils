@@ -1,0 +1,79 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[spanish]{babel} % Set spanish lang
+\usepackage[utf8]{inputenc} % Set UTF-8 encoding
+\usepackage{amsmath} % Math commands (like \begin{equation})
+\usepackage{amssymb} % Math symbols
+\usepackage{graphicx} % Include images
+\usepackage[left=2.58cm, right=2.58cm]{geometry} % set document margins
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{calc} % So expressions \linewidth - 2cm are valid
+
+\date{\today}
+\begin{document}
+	\thispagestyle{empty}
+
+	% First line
+	\begin{minipage}{2cm}
+		\centering
+		\includegraphics[width=2cm]{ipn.png}
+		\label{fig-ipn-cover}
+	\end{minipage}
+	\hfill % change to \dotfill to see what this does. Dhon't add new line before
+	\begin{minipage}{\linewidth-6cm}
+		\centering
+		\huge
+		\textsc{Instituto Politécnico Nacional}
+	\end{minipage}
+	\hfill % change to \dotfill to see what this does. Don't add new line before
+	\begin{minipage}{3cm}
+		\centering
+		\includegraphics[width=3cm]{upiita-oro.png}
+		\label{fig-upiita-cover}
+	\end{minipage}
+	
+	\vspace{0.5cm}
+	
+	% Remaining cover information
+	\begin{center}
+		\LARGE
+		\textsc{Unidad Profesional Interdisciplinaria en Ingeniería y Tecnologías Avanzadas}
+		
+		\vspace{1.5cm}
+		\Large
+		\textbf{Tarea de \LaTeX}
+		
+		\vspace{1cm}
+		\large
+		Presenta\\
+		\vspace{0.3cm}
+		\textbf{Equipo 1}
+		\vspace{0.3cm}
+		\begin{table}[h]
+			\centering
+			\large
+			\begin{tabular}{lr}
+				\textbf{Velasco Guzmán Benjamín Antonio}	&	\textbf{boleta}
+			\end{tabular}
+		\end{table}
+		
+		\vspace{1cm}
+		\large
+		Profesor\\
+		\vspace{0.3cm}
+		\large
+		\textbf{Dr. Profesor Patricio Estrella}
+		
+		\vspace{1cm}
+		\large
+		Unidad de Aprendizaje \\
+		\vspace{0.3cm}
+		\large
+		\textbf{Sistemas distribuidos}
+		
+		\vspace{1cm}
+		\today
+	\end{center}
+	
+	\newpage
+\end{document}

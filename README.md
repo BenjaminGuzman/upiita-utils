@@ -14,19 +14,34 @@ Todo el source code está bajo la licencia GPLv3, entonces eres libre de modific
 
 - Convertir todas las imágenes a PDF
 
-```
+```shell
 convert *.jpg tarea_Velasco_Guzman.pdf
 ```
 
+`-rotate  <degree>` es una opción útil si ves que el PDF tiene las imágenes rotadas. e.g. `convert -rotate 90 *.jpg tarea_Velasco_Guzman.pdf`
+
 - Convertir todas las imágenes a PDF y agregar portada al inicio
 
-```
+```shell
 convert *.jpg tarea.tmp.pdf && pdfunite portada.pdf tarea.tmp.pdf tarea_Velasco_Guzman.pdf && rm tarea.tmp.pdf
 ```
 
+### Compresiones de imágenes
+
+JPEG/JPG:
+
+```shell
+jpegoptim --size 400k *.jpg
+```
+
+PNG:
+
+TODO
+
+
 ### Compresiones del PDF
 
-```
+```shell
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -sOutputFile=compressed.pdf input.pdf
 ```
 
@@ -56,7 +71,7 @@ Ver [pregunta](https://askubuntu.com/questions/113544/how-can-i-reduce-the-file-
 
 Aguas con comandos como el siguiente
 
-```
+```shell
 convert *.jpg tarea.pdf
 ```
 

@@ -69,6 +69,8 @@ Ver [pregunta](https://askubuntu.com/questions/113544/how-can-i-reduce-the-file-
 
 - [`ghostscript`](https://www.ghostscript.com/) es una utilidad para  trabajar con archivos PDF. **Pro Tip**: Ve los videos de *Computerphile* respecto a los PDF's para entender cómo almacenan y representan información.
 
+- [`jpegoptim`](https://github.com/tjko/jpegoptim) utilidad para optimizar archivos jpeg. Para instalar: `dnf install jpegoptim`
+
 Aguas con comandos como el siguiente
 
 ```shell

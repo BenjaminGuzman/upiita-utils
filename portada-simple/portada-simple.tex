@@ -9,6 +9,21 @@
 \usepackage{subcaption}
 \usepackage{calc} % So expressions \linewidth - 2cm are valid
 
+% setup to color links, citations and URL's
+\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{
+	linkcolor = violet!85!black,
+	citecolor = YellowOrange!85!black,
+	urlcolor = Aquamarine!85!black,
+	colorlinks = true,
+}
+
+% setup bibliography
+\usepackage[backend=biber]{biblatex} % you must configure your LaTeX editor to use biber (or update this line)
+%\addbibresource{bibliography.bib}
+%Remember to use \printbibliography at the end!
+
 \date{\today}
 \begin{document}
 	\thispagestyle{empty}

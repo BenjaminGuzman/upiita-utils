@@ -78,3 +78,7 @@ convert *.jpg tarea.pdf
 ```
 
 Pues el glob pattern puede ser tratado de diferente forma si tienes una shell extraña.
+
+## Otros proyectos de utilidad
+
+- [https://github.com/BenjaminGuzman/HPD2540WebScanAutomation](https://github.com/BenjaminGuzman/HPD2540WebScanAutomation): Útil para ahorrar tiempo al escanear
